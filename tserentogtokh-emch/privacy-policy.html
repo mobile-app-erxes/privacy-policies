@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="mn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Нууцлалын бодлого — Цэрэнтогтох ЭМЧ</title>
+<style>
+  :root { --bg:#ffffff; --fg:#1f2328; --muted:#59636e; --line:#e5e7eb; --accent:#0f766e; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0d1117; --fg:#e6edf3; --muted:#9198a1; --line:#30363d; --accent:#2dd4bf; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg);
+    font:16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 16px 64px; }
+  h1 { font-size: 1.8rem; margin: 0 0 4px; }
+  h2 { font-size: 1.2rem; margin: 32px 0 8px; padding-top: 8px; border-top: 1px solid var(--line); }
+  .meta { color: var(--muted); margin: 0 0 24px; }
+  ul { padding-left: 1.2em; }
+  li { margin: 4px 0; }
+  a { color: var(--accent); }
+  .en { margin-top: 56px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Нууцлалын бодлого</h1>
+  <p class="meta">«Цэрэнтогтох ЭМЧ» мобайл апп · Хүчин төгөлдөр болсон: 2026 оны 11 сарын 16</p>
+
+  <p>Энэхүү бодлого нь «Цэрэнтогтох ЭМЧ» мобайл аппликейшн (цаашид «Апп») таны мэдээллийг хэрхэн цуглуулж, ашиглаж, хадгалж, хамгаалдгийг тайлбарлана. Аппыг erxes Inc хөгжүүлж, нийтэлдэг. Аппыг ашигласнаар та энэхүү бодлоготой танилцсан гэж үзнэ.</p>
+
+  <h2>1. Бидний цуглуулдаг мэдээлэл</h2>
+  <ul>
+    <li><strong>Бүртгэлийн мэдээлэл:</strong> овог, нэр, имэйл хаяг, утасны дугаар, нууц үг (шифрлэгдсэн хэлбэрээр хадгалагдана).</li>
+    <li><strong>Профайлын мэдээлэл:</strong> хүйс, байгууллагын нэр, албан тушаал, профайл зураг (та өөрөө оруулсан тохиолдолд).</li>
+    <li><strong>Харилцан яриа:</strong> аппын туслах болон чатаар илгээсэн мессеж, хавсаргасан зураг.</li>
+    <li><strong>Гишүүнчлэл, төлбөр:</strong> гишүүнчлэлийн төлөв, хугацаа, захиалга болон нэхэмжлэлийн мэдээлэл. Төлбөрийг QPay болон банкны апп-аар дамжуулан хийдэг бөгөөд Апп таны банкны карт, дансны мэдээллийг цуглуулж, хадгалдаггүй.</li>
+    <li><strong>Төхөөрөмжийн мэдээлэл:</strong> push мэдэгдэл илгээхэд шаардлагатай төхөөрөмжийн токен (Firebase Cloud Messaging).</li>
+    <li><strong>Хичээл, арга хэмжээний оролцоо:</strong> үзсэн хичээл, бүртгүүлсэн арга хэмжээ зэрэг аппын хэрэглээ.</li>
+  </ul>
+
+  <h2>2. Төхөөрөмжийн зөвшөөрөл</h2>
+  <ul>
+    <li><strong>Камер, зургийн сан:</strong> зөвхөн та профайл зураг солих эсвэл чатад зураг илгээх үед, таны сонгосон зургийг ашиглана.</li>
+    <li><strong>Face ID / хурууны хээ:</strong> хурдан нэвтрэхэд ашиглана. Биометрийн өгөгдөл таны төхөөрөмжөөс гардаггүй бөгөөд бидэнд хэзээ ч ирдэггүй. Нэвтрэх мэдээллийг төхөөрөмжийн аюулгүй санд (Keychain / Keystore) хадгална.</li>
+    <li><strong>Мэдэгдэл:</strong> шинэ хичээл, арга хэмжээ, мессежийн тухай мэдэгдэл илгээхэд ашиглана. Та төхөөрөмжийн тохиргооноос хэдийд ч унтрааж болно.</li>
+  </ul>
+
+  <h2>3. Мэдээллийг ашиглах зорилго</h2>
+  <ul>
+    <li>Бүртгэл үүсгэх, нэвтрүүлэх, таны аккаунтыг хамгаалах;</li>
+    <li>Хичээл, арга хэмжээ, гишүүнчлэлийн үйлчилгээ үзүүлэх;</li>
+    <li>Гишүүнчлэлийн төлбөрийг баталгаажуулах;</li>
+    <li>Таны асуултад хариулах, мэдэгдэл илгээх;</li>
+    <li>Аппын ажиллагааг сайжруулах, алдааг засах.</li>
+  </ul>
+  <p>Бид таны мэдээллийг зар сурталчилгааны зорилгоор ашигладаггүй, гуравдагч этгээдэд худалддаггүй.</p>
+
+  <h2>4. Мэдээлэл хуваалцах</h2>
+  <p>Таны мэдээллийг зөвхөн үйлчилгээ үзүүлэхэд шаардлагатай дараах үйлчилгээ үзүүлэгчидтэй хуваалцана:</p>
+  <ul>
+    <li><strong>erxes</strong> — хэрэглэгчийн бүртгэл, контент, чат, захиалгын мэдээллийг хадгалах сервер;</li>
+    <li><strong>Google Firebase</strong> — push мэдэгдэл хүргэх;</li>
+    <li><strong>QPay болон банкууд</strong> — гишүүнчлэлийн төлбөр хийх.</li>
+  </ul>
+  <p>Хуулиар шаардсан тохиолдолд эрх бүхий байгууллагад мэдээлэл өгч болно.</p>
+
+  <h2>5. Хадгалалт ба аюулгүй байдал</h2>
+  <p>Мэдээллийг шифрлэгдсэн холболтоор (HTTPS) дамжуулж, хандалтыг хязгаарласан серверт хадгална. Таны аккаунт идэвхтэй байх хугацаанд мэдээллийг хадгалж, аккаунтыг устгасны дараа хуулиар хадгалах үүрэгтэй мэдээллээс (жишээ нь, төлбөрийн баримт) бусдыг устгана.</p>
+
+  <h2>6. Таны эрх, аккаунт устгах</h2>
+  <p>Та өөрийн мэдээлэлтэй танилцах, засах (аппын «Профайл» хэсгээс), мөн аккаунт болон холбогдох мэдээллээ бүрэн устгуулахыг хүсэх эрхтэй. Аккаунт устгуулах бол бүртгэлтэй имэйл эсвэл утасны дугаараа бичиж <a href="mailto:sodoo8.se@gmail.com">sodoo8.se@gmail.com</a> хаягаар хүсэлт илгээнэ үү. Бид хүсэлтийг 30 хоногийн дотор шийдвэрлэнэ.</p>
+
+  <h2>7. Хүүхдийн нууцлал</h2>
+  <p>Апп нь 13-аас доош насны хүүхдэд зориулагдаагүй бөгөөд бид тэднээс мэдээлэл санаатайгаар цуглуулдаггүй.</p>
+
+  <h2>8. Бодлогын өөрчлөлт</h2>
+  <p>Энэхүү бодлогыг шинэчилсэн тохиолдолд энэ хуудсанд нийтэлж, дээрх огноог өөрчилнө.</p>
+
+  <h2>9. Холбоо барих</h2>
+  <p>Нууцлалтай холбоотой асуулт байвал: <a href="mailto:sodoo8.se@gmail.com">sodoo8.se@gmail.com</a></p>
+
+  <section class="en" lang="en">
+    <h1>Privacy Policy (English summary)</h1>
+    <p class="meta">“Цэрэнтогтох ЭМЧ” mobile app · Effective November 16, 2026</p>
+    <p>The app is developed and published by erxes Inc. We collect: account details (name, email, phone, password), profile details (gender, company, position, optional profile photo), messages and images you send in chat, membership and order/invoice records, a push notification token (Firebase Cloud Messaging), and in-app activity such as lessons viewed and events joined. Payments are made through QPay and bank apps; the app never collects or stores card or bank account details.</p>
+    <p>Camera and photo access are used only when you choose a profile photo or send an image. Face ID / fingerprint sign-in is handled entirely on your device; biometric data never leaves it, and sign-in credentials are kept in the device's secure storage.</p>
+    <p>We use this data only to provide the service, process memberships, send notifications and improve the app. We do not sell your data or use it for advertising. Data is shared only with service providers needed to run the app (erxes servers, Google Firebase, QPay and banks) or where required by law. Data is sent over HTTPS and kept while your account is active.</p>
+    <p>You can edit your profile in the app and request deletion of your account and associated data by emailing <a href="mailto:sodoo8.se@gmail.com">sodoo8.se@gmail.com</a>; requests are handled within 30 days. The app is not directed at children under 13. Changes to this policy will be posted on this page.</p>
+  </section>
+</main>
+</body>
+</html>
